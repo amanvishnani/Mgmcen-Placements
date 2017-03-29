@@ -1,4 +1,7 @@
 <md-sidenav-container fullscreen>
     <app-nav-bar></app-nav-bar>
+    <div [hidden]="true">
+        <md-progress-bar mode="indeterminate" color="accent"></md-progress-bar>
+    </div>
     <router-outlet></router-outlet>
 </md-sidenav-container>
