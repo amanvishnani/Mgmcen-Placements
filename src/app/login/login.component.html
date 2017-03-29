@@ -1,30 +1,65 @@
 <div [hidden]="true">
     <md-progress-bar mode="indeterminate" color="accent"></md-progress-bar>
 </div>
-<md-grid-list class="component" cols="4">
-  <md-grid-tile [colspan]=3>
-    <md-card>
-      <md-card-header class="login-card">
-          <div md-card-avatar></div>
-          <md-card-title>Login</md-card-title>
-          <md-card-subtitle>Login with Social providers or Username-Password</md-card-subtitle>
-      </md-card-header>
-      <md-card-content>
-          <button md-button class="loginBtn loginBtn--google">
-            Login with Google
-          </button>
-        <p> - OR -</p>
-          <md-input-container class="full-width">
-            <input mdInput placeholder="Username">
-          </md-input-container>
-          <md-input-container class="full-width">
-            <input mdInput placeholder="Password">
-          </md-input-container>
-            <button md-raised-button color="accent" class="full-width">Login</button>
-      </md-card-content>
-    </md-card>
-  </md-grid-tile>
-  <md-grid-tile [colspan]=1 [rowspan]=1>2</md-grid-tile>
-  <md-grid-tile [colspan]=4>3</md-grid-tile>
-  
-</md-grid-list>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <md-card class="full-height">
+        <a href="http://mgmcen.ac.in">
+        <md-card-header class="login-card">
+            <img src="https://indiacollegeinfo.com/templates/uploads/college/logo/titleimage_copy.png" height="64" width="64"/>
+            <md-card-title>Mahatma Gandhi Mission's</md-card-title>
+            <md-card-subtitle>College of Enginering Nanded</md-card-subtitle>
+        </md-card-header>
+        </a>
+        <md-card-content>
+          <br/>
+          <hr>
+          <p>
+            Mahatma Gandhi Mission, that started its journey in a modest way with a rural health care center at Nila and a hospital in Nanded: has emerged as a 5000- member family with more than 50 educational organizations, health care centers and social welfare units functioning under......
+          </p>
+          <p><b>Director:</b><span>&nbsp;&nbsp;</span> Mrs. G.S. Lathkar	</p>
+          <p><b>T.P.O. Incharge:</b><span>&nbsp;&nbsp;</span> Mr. S. I. Titare	</p>
+        </md-card-content>
+      </md-card>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <md-card>
+        <md-card-header class="login-card">
+            <div md-card-avatar></div>
+            <md-card-title>Login</md-card-title>
+        </md-card-header>
+        <md-card-content>
+            <button md-button class="loginBtn loginBtn--google">
+              Login with Google
+            </button>
+          <p class="center"> - OR -</p>
+            <md-input-container class="full-width">
+              <input mdInput placeholder="Username">
+            </md-input-container>
+            <md-input-container class="full-width">
+              <input mdInput placeholder="Password">
+            </md-input-container>
+              <button md-raised-button color="accent" class="full-width">Login</button>
+        </md-card-content>
+      </md-card>
+    </div>
+    <!--Contributors-->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="card">
+        <div class="card-header text-center">
+          <b>Contributors</b>
+        </div>
+        <div class="card-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 text-center">
+              <img src="https://www.amanvishnani.com/images/forweb.jpg" height="128" width="128"/>
+              <div>Aman Vishnani</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
