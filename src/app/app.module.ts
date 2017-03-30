@@ -7,16 +7,19 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { routes } from './app.routes';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AccordionModule } from 'ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LoginComponent } from './login/login.component';
+import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileEditComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -24,7 +27,8 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     HttpModule,
     MaterialModule,
-    routes
+    routes,
+    AccordionModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

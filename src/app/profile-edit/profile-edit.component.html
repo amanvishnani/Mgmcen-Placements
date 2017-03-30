@@ -1,0 +1,100 @@
+<div class="container pad">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+      <md-card>
+        <md-card-header>
+            <div md-card-avatar></div>
+            <md-card-title>
+              Your Profile
+            </md-card-title>
+        </md-card-header>
+        <accordion [closeOthers]="true">
+          <md-card-content>
+             <accordion-group heading="Basic Details">
+              <md-input-container class="full-width">
+                <input mdInput placeholder="First Name">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Last Name">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Date of Birth">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Mobile Number">
+              </md-input-container>
+             </accordion-group>
+             <accordion-group heading="Education - 10th Standard">
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="School Name">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Percentage Obtained">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Board (Maharashtra State Board, CBSE, etc)">
+              </md-input-container>
+              <br/>
+             </accordion-group>
+             <accordion-group heading="12th Standard / Diploma">
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="College Name">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Percentage Obtained">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Board (Maharashtra State Board, CBSE, MSBT, etc)">
+              </md-input-container>
+             </accordion-group>
+             <accordion-group heading="B.E.">
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="College Name">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Percentage Obtained (Aggrigate till now)">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="University (SRTMUN, etc)">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Joining Year">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Passing Year">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Branch">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Number of Live Backlogs (provide if any, else enter 0)">
+              </md-input-container>
+              <br/>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="College Roll (MIS I.D.)">
+              </md-input-container>
+             </accordion-group>
+              <br>
+                <button md-raised-button color="accent" class="full-width" (click)="openSnackBar('Profile Saved Successfully','OK')">Save</button>
+          </md-card-content>
+        </accordion>
+  </md-card>
+    </div>
+  </div>
+</div>

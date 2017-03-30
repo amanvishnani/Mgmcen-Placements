@@ -2,15 +2,15 @@
   <button md-button>Home</button>
   
   <!--<a md-button>My Profile</a>-->
-  <a md-button>Students</a>
-  <a md-button>Campus Drive</a>
+  <button md-button>Students</button>
+  <button md-button>Campus Drive</button>
 
   <span class="example-spacer"></span>
   
   <button md-button [mdMenuTriggerFor]="menu"><md-icon>account_circle</md-icon>John Doe</button>
   <md-menu #menu="mdMenu">
-    <button md-menu-item>Profile</button>
+    <button md-menu-item [routerLink]="['/profile-edit']">Profile</button>
     <button md-menu-item>Logout</button>
   </md-menu>
-  <button md-button>Login</button>
+  <button md-button [routerLink]="['/login']">Login</button>
 </md-toolbar>
